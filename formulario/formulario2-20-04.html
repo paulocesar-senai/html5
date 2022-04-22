@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <style>
-        body{}
-        table#tabform {border: 1px solid black;margin: auto;}
+        body{background-color: rgb(102, 102, 102);}
+        table#tabform {border: 1px solid black;margin: auto; background-color: rgb(187, 187, 187);}
         input#fnome {width: 300px;}
-        input#pradio {}
+        td#radio {text-align: center;}
+        td#option {text-align: left;font-size: 8pt;}
 
         td#texto {width: 200px; font-size: 8pt;text-align: right;}
-        td#campos { width: 300px;text-align: right;}
+        td#campos { width: 300px;text-align: right; }
+        
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,56 +32,61 @@
             <Td id="campos"><input type="text" name="" id="fnome"></Td>
         </tr>
         <tr>
-            <Td colspan="2" id="colspan">Dados cadastrais</Td>
-            <Td colspan="2" id="colspan">Endereço de entrega</Td>
+            <Td colspan="2" id="colspan">     Dados cadastrais</Td>
+            <Td colspan="2" id="colspan">     Endereço de entrega</Td>
         </tr>
         <tr>
             <Td id="texto"></Td>
-            <Td id="campos">
-                <input type="radio" name="PessoaF" id="pradio">Pessoa Física
-                <input type="radio" name="PessoaJ" id="pradio">Pessoa JurÍdica
+            <Td id="radio">
+                <input type="radio" name="PessoaF" id="">Pessoa Física
+                <input type="radio" name="PessoaJ" id="">Pessoa JurÍdica
             </Td>
             <Td id="texto"></Td>
             <Td id="campos"></Td>
         </tr>
         <tr>
-            <Td id="texto"></Td>
-            <Td id="campos"></Td>
-            <Td id="texto"></Td>
-            <Td id="campos"></Td>
-        </tr>
-        <tr>
-            <Td id="texto"></Td>
-            <Td id="campos"></Td>
-            <Td id="texto"></Td>
+            <Td id="texto">Nome*</Td>
+            <Td id="campos"><input type="text" name="" id="fnome"></Td>
+            <Td id="texto">CEP</Td>
             <Td id="campos"></Td>
         </tr>
         <tr>
-            <Td id="texto"></Td>
-            <Td id="campos"></Td>
-            <Td id="texto"></Td>
-            <Td id="campos"></Td>
-        </tr>
-        <tr>
-            <Td id="texto"></Td>
-            <Td id="campos"></Td>
-            <Td id="texto"></Td>
+            <Td id="texto">Sobrenome*</Td>
+            <Td id="campos"><input type="text" name="" id="fnome"></Td>
+            <Td id="texto">Rua</Td>
             <Td id="campos"></Td>
         </tr>
         <tr>
-            <Td id="texto">1</Td>
+            <Td id="texto">Sexo</Td>
+            <Td id="option">
+                <select>
+                    <option value="">Masculino</option>
+                    <option value="">Feminino</option>
+                </select>
+            </Td>
+            <Td id="texto">Numero</Td>
+            <Td id="option"><input type="checkbox" name="">Sem Numero</Td>
+        </tr>
+        <tr>
+            <Td id="texto">CPF*</Td>
+            <Td id="campos"></Td>
+            <Td id="texto">fthfth</Td>
+            <Td id="campos">fsdf</Td>
+        </tr>
+        <tr>
+            <Td id="texto">Telefone</Td>
             <Td id="campos">2</Td>
             <Td id="texto">3</Td>
             <Td id="campos">4</Td>
         </tr>
         <tr>
-            <Td id="texto">1</Td>
+            <Td id="texto">Celular</Td>
             <Td id="campos">2</Td>
             <Td id="texto">3</Td>
             <Td id="campos">4</Td>
         </tr>
         <tr>
-            <Td id="texto">1</Td>
+            <Td id="texto">Nascimento*</Td>
             <Td id="campos">2</Td>
             <Td id="texto">3</Td>
             <Td id="campos">4</Td>
