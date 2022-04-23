@@ -2,14 +2,20 @@
 <html lang="en">
 <head>
     <style>
-        body{background-color: rgb(102, 102, 102);}
-        table#tabform {border: 1px solid black;margin: auto; background-color: rgb(187, 187, 187);}
+        body{background-color: rgb(255, 255, 255);}
+        table#tabform {border: 5px solid rgb(253, 0, 0);margin: auto; background-color: rgb(255, 255, 255); border-spacing: 10px;}
+        td {border-spacing: 10px;}
         input#fnome {width: 300px;}
         td#radio {text-align: center;}
         td#option {text-align: left;font-size: 8pt;}
+        td#texto {width: auto; font-size: 8pt;text-align: right;}
+        td#campos { width: 300px;text-align: right;}
+        td#teste {text-indent: 20px;}
+        input#numero {width: 60px;}
+        td#numero {text-align: left; font-size: 8pt;}
+        input#texto {width: 180px;}
+        
 
-        td#texto {width: 200px; font-size: 8pt;text-align: right;}
-        td#campos { width: 300px;text-align: right; }
         
     </style>
     <meta charset="UTF-8">
@@ -18,91 +24,128 @@
     <title>Formulario 2</title>
 </head>
 <body>
+   
     <table id="tabform">
-        <tr>
-            <Td id="texto">E-mail*</Td>
-            <Td id="campos"><input type="text" name="" id="fnome"></Td>
-            <Td id="texto">Crie uma Senha*</Td>
-            <Td id="campos"><input type="text" name="" id="fnome"></Td>
-        </tr>
-        <tr>
-            <Td id="texto">Repetir E-mail*</Td>
-            <Td id="campos"><input type="text" name="" id="fnome"></Td>
-            <Td id="texto">Repetir uma Senha*</Td>
-            <Td id="campos"><input type="text" name="" id="fnome"></Td>
-        </tr>
-        <tr>
-            <Td colspan="2" id="colspan">     Dados cadastrais</Td>
-            <Td colspan="2" id="colspan">     Endereço de entrega</Td>
-        </tr>
-        <tr>
-            <Td id="texto"></Td>
-            <Td id="radio">
-                <input type="radio" name="PessoaF" id="">Pessoa Física
-                <input type="radio" name="PessoaJ" id="">Pessoa JurÍdica
+            <tr>
+                <Td id="texto">E-mail*</Td>
+                <Td id="campos"><input type="text" name="" id="fnome"></Td>
+                <Td id="texto">Crie uma Senha*</Td>
+                <Td id="campos"><input type="text" name="" id="fnome"></Td>
+            </tr>
+            <tr>
+                <Td id="texto">Repetir E-mail*</Td>
+                <Td id="campos"><input type="text" name="" id="fnome"></Td>
+                <Td id="texto">Repetir uma Senha*</Td>
+                <Td id="campos"><input type="text" name="" id="fnome"><br></Td>
+                
+            </tr>
+            <tr>
+            
+                <Td colspan="2" id="teste">Dados cadastrais</Td>
+                <Td colspan="2" id="teste">Endereço de entrega</Td>
+            
+            </tr>
+            <tr>
+                <Td id="texto"></Td>
+                <Td id="radio">
+                        <INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op1"> Pessoa Física
+                        <INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op2"> Pessoa Juídica
+                </Td>
+                <Td id="texto">CEP</Td>
+                <Td id="cep"><input type="text" name="" id=""></Td>
+            </tr>
+            <tr>
+                <Td id="texto">Nome*</Td>
+                <Td id="campos"><input type="text" name="" id="fnome"></Td>
+                <Td id="texto">Rua</Td>
+                <Td id="campos"><input type="text" name="" id="fnome"></Td>
+            </tr>
+            <tr>
+                <Td id="texto">Sobrenome*</Td>
+                <Td id="campos"><input type="text" name="" id="fnome"></Td>
+                <Td id="texto">Numero</Td>
+                <Td id="numero"><input type="text" id="numero"></Td>
+            </tr>
+            <tr>
+                <Td id="texto">Sexo</Td>
+                <Td id="option">
+                    <select>
+                        <option value="">Masculino</option>
+                        <option value="">Feminino</option>
+                    </select>
+                </Td>
+                <Td id="texto"></Td>
+                <Td id="numero"><input type="checkbox" name="">Sem Numero</Td>
+            </tr>
+            <tr>
+                <Td id="texto">CPF*</Td>
+                <Td id=""><input type="text" name="" id="texto"></Td>
+                <Td id="texto">Complemento</Td>
+                <Td id="campos"><input type="text" name="" id="fnome"></Td>
+            </tr>
+            <tr>
+                <Td id="texto" >Telefone</Td>
+                <Td id="">   <input type="text" name="" id="texto"></Td>
+                <Td id="texto">Referência</Td>
+                <Td id="campos">   <input type="text" name="" id="fnome"></Td>
+            </tr>
+            <tr>
+                <Td id="texto">Celular</Td>
+                <Td id=""><input type="text" name="" id="texto"></Td>
+                <Td id="texto">Bairro</Td>
+                <Td id="campos"><input type="text" name="" id="fnome"></Td>
+            </tr>
+            <tr>
+                <Td id="texto">Nascimento*</Td>
+                <Td id="option"><input type="date"></Td>
+                <Td id="texto">Cidade</Td>
+                <Td id="campos"><input type="text" name="" id="fnome"></Td>
+            </tr>
+            <tr>
+                <Td id="texto"></Td>
+                <Td id="option"><input type="checkbox" name="" id="">Receber ofertas e novidades por e-mail</Td>
+                <Td id="texto">Estado</Td>
+                <Td id="option">
+                    <select id="estado" name="estado">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </select>
+            
             </Td>
-            <Td id="texto"></Td>
-            <Td id="campos"></Td>
-        </tr>
-        <tr>
-            <Td id="texto">Nome*</Td>
-            <Td id="campos"><input type="text" name="" id="fnome"></Td>
-            <Td id="texto">CEP</Td>
-            <Td id="campos"></Td>
-        </tr>
-        <tr>
-            <Td id="texto">Sobrenome*</Td>
-            <Td id="campos"><input type="text" name="" id="fnome"></Td>
-            <Td id="texto">Rua</Td>
-            <Td id="campos"></Td>
-        </tr>
-        <tr>
-            <Td id="texto">Sexo</Td>
-            <Td id="option">
-                <select>
-                    <option value="">Masculino</option>
-                    <option value="">Feminino</option>
-                </select>
-            </Td>
-            <Td id="texto">Numero</Td>
-            <Td id="option"><input type="checkbox" name="">Sem Numero</Td>
-        </tr>
-        <tr>
-            <Td id="texto">CPF*</Td>
-            <Td id="campos"></Td>
-            <Td id="texto">fthfth</Td>
-            <Td id="campos">fsdf</Td>
-        </tr>
-        <tr>
-            <Td id="texto">Telefone</Td>
-            <Td id="campos">2</Td>
-            <Td id="texto">3</Td>
-            <Td id="campos">4</Td>
-        </tr>
-        <tr>
-            <Td id="texto">Celular</Td>
-            <Td id="campos">2</Td>
-            <Td id="texto">3</Td>
-            <Td id="campos">4</Td>
-        </tr>
-        <tr>
-            <Td id="texto">Nascimento*</Td>
-            <Td id="campos">2</Td>
-            <Td id="texto">3</Td>
-            <Td id="campos">4</Td>
-        </tr>
-        <tr>
-            <Td id="texto">1</Td>
-            <Td id="campos">2</Td>
-            <Td id="texto">3</Td>
-            <Td id="campos">4</Td>
-        </tr>
-        <tr>
-            <Td id="texto">1</Td>
-            <Td id="campos">2</Td>
-            <Td id="texto">3</Td>
-            <Td id="campos">4</Td>
-        </tr>
-    </table>
+            </tr>
+            <tr>
+                <Td id="texto"></Td>
+                <Td id="option"><button type="submit">Cadastrar</button></Td>
+                <Td id="texto"></Td>
+                <Td id="campos"></Td>
+            </tr>
+     </table>
+   
 </body>
 </html>
